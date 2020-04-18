@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		39BE4BCCE82FD1F2ED75FBEF /* Pods_CJMAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJMAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FF4AB860634D149337D3E6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4FF4AB860634D149337D3E6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5050A9413063406D477ED6C7 /* Pods-CJMAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMAlertViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-CJMAlertViewController_Tests/Pods-CJMAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		50AD02F5E6FE33BB2D08103C /* Pods-CJMAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMAlertViewController_Example.debug.xcconfig"; path = "Target Support Files/Pods-CJMAlertViewController_Example/Pods-CJMAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CJMAlertViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJMAlertViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +62,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79FECD5D6D90472E2844DB54 /* Pods-CJMAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMAlertViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-CJMAlertViewController_Example/Pods-CJMAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		82B341BDD10661B08BE72CB7 /* CJMAlertViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CJMAlertViewController.podspec; path = ../CJMAlertViewController.podspec; sourceTree = "<group>"; };
+		82B341BDD10661B08BE72CB7 /* CJMAlertViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CJMAlertViewController.podspec; path = ../CJMAlertViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A2DCA0233823BB9FF773DDFA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A2DCA0233823BB9FF773DDFA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EF7E8B18AA44A2846374E6F1 /* Pods-CJMAlertViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMAlertViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CJMAlertViewController_Tests/Pods-CJMAlertViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD90E0AE39AABD9F9FC745D /* Pods_CJMAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJMAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EF7E8B18AA44A2846374E6F1 /* Pods-CJMAlertViewController_Tests.debug.xcconfig */,
 				5050A9413063406D477ED6C7 /* Pods-CJMAlertViewController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

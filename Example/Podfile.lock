@@ -1,0 +1,16 @@
+PODS:
+  - CJMAlertViewController (0.1.0)
+
+DEPENDENCIES:
+  - CJMAlertViewController (from `../`)
+
+EXTERNAL SOURCES:
+  CJMAlertViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CJMAlertViewController: a5f8bac15f338a414a0efe3aac950edbed2e49f9
+
+PODFILE CHECKSUM: 2d51dec0adf5250093d1d15759a283b3d1b37f7b
+
+COCOAPODS: 1.9.1
