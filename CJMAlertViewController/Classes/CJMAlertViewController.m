@@ -175,7 +175,7 @@
     [NSLayoutConstraint activateConstraints:constraints];
 }
 
-- (void)addLabelWithConfigurationHandler:(void (^)(UILabel * _Nonnull))configurationHandler {
+- (void)addLabelWithConfigurationHandler:(void (^)(UILabel *))configurationHandler {
     UILabel *label = [[UILabel alloc] init];
     label.textAlignment = NSTextAlignmentLeft;
     label.font = [UIFont systemFontOfSize:16];
@@ -191,7 +191,7 @@
     }
 }
 
-- (void)addTextFieldWithConfigurationHandler:(void (^ __nullable)(UITextField *textField))configurationHandler {
+- (void)addTextFieldWithConfigurationHandler:(void (^)(UITextField *textField))configurationHandler {
     UITextField *textField = [[UITextField alloc] init];
     textField.textAlignment = NSTextAlignmentLeft;
     textField.font = [UIFont systemFontOfSize:16];
@@ -207,7 +207,7 @@
     }
 }
 
-- (void)addScrollViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIScrollView *view))configurationHandler {
+- (void)addScrollViewWithHeight:(CGFloat)height configurationHandler:(void (^)(UIScrollView *view))configurationHandler {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     scrollView.showsVerticalScrollIndicator = NO;
@@ -222,7 +222,7 @@
     }
 }
 
-- (void)addViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIView *view))configurationHandler {
+- (void)addViewWithHeight:(CGFloat)height configurationHandler:(void (^)(UIView *view))configurationHandler {
     UIView *view = [[UIView alloc] init];
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [_alertView addSubview:view];

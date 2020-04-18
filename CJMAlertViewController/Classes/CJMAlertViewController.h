@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface CJMAlertAction : NSObject
 @property (nullable, nonatomic, readonly) NSString *title;
@@ -23,47 +22,45 @@ NS_ASSUME_NONNULL_BEGIN
  * @param style 类型 暂时未实现
  * @param handler 回调函数
  */
-+ (instancetype)actionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler;
++ (instancetype _Nonnull )actionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction * _Nonnull action))handler;
 
 
 @end
 
 
 @interface CJMAlertViewController : UIViewController
-@property (nonatomic, readonly) NSArray<CJMAlertAction *> *actions;
+@property (nonnull, nonatomic, readonly) NSArray<CJMAlertAction *> * actions;
 @property (nullable, nonatomic, copy) NSString *alertTitle;     // 弹框标题
 @property (nonatomic, assign) CGFloat alertViewHeight;          // 默认 200
-@property (nonatomic, strong, readonly) UIView *alertView;      // 弹框
-@property (nonatomic, strong, readonly) UILabel *titleLabel;    // 标题Label
+@property (nonnull, nonatomic, strong, readonly) UIView *alertView;      // 弹框
+@property (nonnull, nonatomic, strong, readonly) UILabel *titleLabel;    // 标题Label
 
 /**
  * @brief 添加一个按钮和事件
  */
-- (void)addAction:(CJMAlertAction *)action;
+- (void)addAction:(CJMAlertAction *_Nonnull)action;
 
 /**
  * @brief 添加一个label
  */
-- (void)addLabelWithConfigurationHandler:(void (^ __nullable)(UILabel *label))configurationHandler;
+- (void)addLabelWithConfigurationHandler:(void (^ __nullable)(UILabel *_Nonnull label))configurationHandler;
 
 /**
  * @brief 添加一个label
  */
-- (void)addTextFieldWithConfigurationHandler:(void (^ __nullable)(UITextField *textField))configurationHandler;
+- (void)addTextFieldWithConfigurationHandler:(void (^ __nullable)(UITextField * _Nonnull textField))configurationHandler;
 
 /**
  * @brief 添加一个view
  */
-- (void)addViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIView *view))configurationHandler;
+- (void)addViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIView *_Nonnull view))configurationHandler;
 
 /**
 * @brief 添加一个scrollView
 */
-- (void)addScrollViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIScrollView *view))configurationHandler;
+- (void)addScrollViewWithHeight:(CGFloat)height configurationHandler:(void (^ __nullable)(UIScrollView * _Nonnull view))configurationHandler;
 
 
 
 @end
 
-
-NS_ASSUME_NONNULL_END
