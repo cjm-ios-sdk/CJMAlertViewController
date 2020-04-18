@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CJMAlertViewController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CJMAlertViewController.'
+  s.summary          = '自定义 CJMAlertViewController'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+由于UIAlertViewController的局限性，使得添加一些视图都比较古怪，为了解决这个问题，从而实现了CJMAlertViewController。
                        DESC
 
   s.homepage         = 'https://github.com/cjm-ios-sdk/CJMAlertViewController'
